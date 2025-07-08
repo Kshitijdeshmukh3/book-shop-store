@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to MECH Department</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+
+    .banner {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    h2 {
+      color: #2c3e50;
+      margin-top: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      padding: 14px 28px;
+      background-color: #2c3e50;
+      color: white;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .buttons a:hover {
+      background-color: #1a252f;
+    }
+
+    .back-button {
+      margin: 20px auto;
+      display: block;
+      width: fit-content;
+      padding: 10px 20px;
+      background-color: #999;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .back-button:hover {
+      background-color: #777;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to the MECH Department</h1>
+  </header>
+
+  <!-- Replace with your own image -->
+  <img src="data:image/jpeg;base64,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" alt="Mechanical Engineering Banner" class="banner">
+
+  <div class="container">
+    <h2>About Mechanical Engineering</h2>
+    <p>
+      The Mechanical Engineering (MECH) department is dedicated to the design, development, and manufacturing of machines and mechanical systems. 
+      With a strong foundation in thermodynamics, materials science, fluid mechanics, and robotics, MECH engineers play a key role in almost every industry.
+    </p>
+
+    <div class="buttons">
+      <a href="syllabusmech.html">📘 Syllabus</a>
+      <a href="booksmech.html">📚 Books</a>
+    </div>
+  </div>
+
+  <a href="home.html" class="back-button">⬅️ Back</a>
+
+  <footer>
+    &copy; 2025 MECH Department | All Rights Reserved(KPD)
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to CSE Department</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    .banner {
+      width: 100%;
+      max-height: 400px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    h2 {
+      color: #003366;
+    }
+
+    p {
+      font-size: 16px;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .buttons a {
+      text-decoration: none;
+      padding: 14px 28px;
+      background-color: #0055aa;
+      color: white;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .buttons a:hover {
+      background-color: #0077cc;
+    }
+
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Welcome to the CSE Department</h1>
+  </header>
+
+  <img src="data:image/png;base64,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" alt="CSE Department Banner" class="banner" <img src="cover" alt="" sizes="" srcset="">>
+
+  <div class="container">
+    <h2>About CSE</h2>
+    <p>
+      The Department of Computer Science and Engineering (CSE) equips students with a strong foundation in computing principles, programming, algorithms, and system design.
+      The curriculum is designed to produce industry-ready professionals and innovative researchers in the field of computer science and emerging technologies.
+    </p>
+
+    <div class="buttons">
+      <a href="syllabuscse.html">📘 Syllabus</a>
+      <a href="bookscse.html">📚 Books</a>
+    </div>
+  </div>
+
+  <a href="home.html" class="back">⬅ Back to Home</a>
+
+  <footer>
+    &copy; 2025 CSE Department | All Rights Reserved(KPD)
+  </footer>
+
+</body>
+</html>
